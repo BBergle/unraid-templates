@@ -14,6 +14,9 @@ It will also remove commentaries if set to true&#xD;
 &#xD;
 Please run this on a subset of your data before your entire library&#xD;
 &#xD;
+Make a share called MovieTest and move some movies over and make that your movies path in this container&#xD;
+Once it's running you can see how the script works and if you havbe the correct settings&#xD;
+&#xD;
 There is not web UI, Just look at the logs for output&#xD;
 &#xD;
 WARNING: THIS RUNS AS SOON AS YOU START IT&#xD;
@@ -26,7 +29,7 @@ Find the language codes at https://iso639-3.sil.org/code_tables/639/data</Overvi
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699723915</DateInstalled>
+  <DateInstalled>1699724329</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
