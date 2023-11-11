@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>mkv-language-remover-dev</Name>
-  <Repository>bbergle/mkv-language-remover:dev</Repository>
+  <Name>mkv-language-remover</Name>
+  <Repository>bbergle/mkv-language-remover:latest</Repository>
   <Registry>https://hub.docker.com/repository/docker/bbergle/mkv-language-remover/general</Registry>
   <Network>bridge</Network>
   <MyIP/>
