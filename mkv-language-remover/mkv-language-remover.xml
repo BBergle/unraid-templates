@@ -12,6 +12,8 @@
   <Overview>The purpose of this container is to go through your movies directory and convert all mp4 and m2ts file to mkv and then remove a specific language from those movies.&#xD;
 It will also remove commentaries if set to true&#xD;
 &#xD;
+WARNING: THIS RUNS AS SOON AS YOU START IT&#xD;
+&#xD;
 Find the language codes at https://iso639-3.sil.org/code_tables/639/data</Overview>
   <Category>Tools: Status:Beta</Category>
   <WebUI/>
@@ -20,7 +22,7 @@ Find the language codes at https://iso639-3.sil.org/code_tables/639/data</Overvi
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699587156</DateInstalled>
+  <DateInstalled>1699721998</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,5 +30,5 @@ Find the language codes at https://iso639-3.sil.org/code_tables/639/data</Overvi
   <Config Name="Languages" Target="LANGUAGES" Default="" Mode="" Description="Enter a comma seperated list of three letter ISO 639-3 language codes,&#13;&#10;Example: rus, eng" Type="Variable" Display="always" Required="true" Mask="false">rus, ukr, kaz</Config>
   <Config Name="Convert" Target="CONVERT" Default="False" Mode="" Description="Set to True if you want the container to convert all mp4 and m2ts files to mkv" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
   <Config Name="Remove Languages" Target="REMOVE_LANGUAGES" Default="True" Mode="" Description="Set to False if you don't want to remove any languages" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
-  <Config Name="Remove Commentary" Target="REMOVE_COMMENTARY" Default="False" Mode="" Description="Set to True if you want to remove all commentary audio tracks from your library" Type="Variable" Display="always" Required="true" Mask="false">False</Config>
+  <Config Name="Remove Commentary" Target="REMOVE_COMMENTARY" Default="False" Mode="" Description="Set to True if you want to remove all commentary audio tracks from your library" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
 </Container>
