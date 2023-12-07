@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>mkv-language-remover</Name>
-  <Repository>bbergle/mkv-language-remover:latest</Repository>
+  <Repository>bbergle/mkv-language-remover:dev</Repository>
   <Registry>https://hub.docker.com/repository/docker/bbergle/mkv-language-remover/general</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -29,7 +29,7 @@ Find the language codes at https://iso639-3.sil.org/code_tables/639/data</Overvi
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699745951</DateInstalled>
+  <DateInstalled>1701975296</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -39,4 +39,5 @@ Find the language codes at https://iso639-3.sil.org/code_tables/639/data</Overvi
   <Config Name="Remove Languages" Target="REMOVE_LANGUAGES" Default="True" Mode="" Description="Set to False if you don't want to remove any languages" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
   <Config Name="Remove Commentary" Target="REMOVE_COMMENTARY" Default="False" Mode="" Description="Set to True if you want to remove all commentary audio tracks from your library" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
   <Config Name="Test" Target="TEST" Default="" Mode="" Description="If this is set to true, no movies will be processed but the logs will output all movies that will be processed if Test is set to False" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
+  <Config Name="REMOVE_SUBTITLES" Target="REMOVE_SUBTITLES" Default="False" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
 </Container>
