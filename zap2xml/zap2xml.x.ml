@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>zap2xml</Name>
+  <Name>bbergle-zap2xml</Name>
   <Repository>shuaiscott/zap2xml</Repository>
   <Registry>https://hub.docker.com/r/shuaiscott/zap2xml/</Registry>
   <Network>bridge</Network>
