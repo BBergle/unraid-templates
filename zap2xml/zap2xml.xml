@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>bbergle-zap2xml</Name>
   <Repository>spencerlandis/zap2xml</Repository>
-  <Registry>https://hub.docker.com/r/shuaiscott/zap2xml/</Registry>
+  <Registry>https://hub.docker.com/r/spencerlandis/zap2xml</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -11,6 +11,7 @@
   <Project>https://github.com/jef/zap2xml</Project>
   <Overview>Environment Variable-driven configuration of zap2xml&#xD;
 &#xD;
+This is now using a new repo spencerlandis/zap2xml
 Go to https://tvlistings.zap2it.com and make an account, once it is made you can enter the credentials in the fields below&#xD;
 </Overview>
   <Category/>
