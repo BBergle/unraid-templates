@@ -7,7 +7,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/edde746/openwatchparty/issues</Support>
   <Project>https://openwatch.party</Project>
-  <Overview>Self-hosted Open Watch Party relay, for Watch Together in Plezy and other Open Watch Party apps.&#13;&#10;&#13;&#10;This container has NO web interface. After starting it, set the custom relay in each app to:&#13;&#10;    http://YOUR-UNRAID-IP:9978&#13;&#10;In Plezy: Settings - Watch Together Relay.&#13;&#10;&#13;&#10;Rooms on your relay are separate from the public relays, so everyone in a room must use the same relay.&#13;&#10;&#13;&#10;To reach the relay from outside your LAN, put a reverse proxy with TLS in front of it, give apps the proxy's https:// address, and set OWP_TRUST_PROXY to true.&#13;&#10;&#13;&#10;The container runs as root (--user 0:0 in Extra Parameters) so it can save room state to appdata.&#13;&#10;&#13;&#10;Uses the official image from github.com/edde746/openwatchparty. Tag 1 tracks the latest 1.x release.</Overview>
+  <Overview>Self-hosted Open Watch Party relay, for Watch Together in Plezy and other Open Watch Party apps.&#13;&#10;&#13;&#10;This container has NO web interface. After starting it, set the custom relay in each app to:&#13;&#10;    http://YOUR-UNRAID-IP:9977&#13;&#10;In Plezy: Settings - Watch Together Relay.&#13;&#10;&#13;&#10;Rooms on your relay are separate from the public relays, so everyone in a room must use the same relay.&#13;&#10;&#13;&#10;To reach the relay from outside your LAN, put a reverse proxy with TLS in front of it, give apps the proxy's https:// address, and set OWP_TRUST_PROXY to true.&#13;&#10;&#13;&#10;The container runs as root (--user 0:0 in Extra Parameters) so it can save room state to appdata.&#13;&#10;&#13;&#10;Uses the official image from github.com/edde746/openwatchparty. Tag 1 tracks the latest 1.x release.</Overview>
   <Category>Network Services: Media Applications:Video</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/BBergle/unraid-templates/main/owp-relay/owp-relay.xml</TemplateURL>
@@ -19,7 +19,7 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Port: Relay" Target="8080" Default="9978" Mode="tcp" Description="Host port for the relay. Set the app's custom relay to http://YOUR-UNRAID-IP:THIS-PORT (base URL only, no path)." Type="Port" Display="always" Required="true" Mask="false">9978</Config>
+  <Config Name="Port: Relay" Target="8080" Default="9977" Mode="tcp" Description="Host port for the relay. Set the app's custom relay to http://YOUR-UNRAID-IP:THIS-PORT (base URL only, no path)." Type="Port" Display="always" Required="true" Mask="false">9977</Config>
   <Config Name="Path: /state" Target="/state" Default="/mnt/user/appdata/owp-relay" Mode="rw" Description="Room state, so rooms survive a container restart or update." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/owp-relay</Config>
   <Config Name="OWP_STATE_DIR" Target="OWP_STATE_DIR" Default="/state" Mode="" Description="Container path for room state. Leave as /state." Type="Variable" Display="advanced-hide" Required="true" Mask="false">/state</Config>
   <Config Name="OWP_TRUST_PROXY" Target="OWP_TRUST_PROXY" Default="false" Mode="" Description="Set to true only behind a reverse proxy, so per-IP limits see the real client IP from X-Forwarded-For." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
