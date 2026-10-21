@@ -22,6 +22,6 @@
   <Config Name="Port: Relay" Target="8080" Default="9977" Mode="tcp" Description="Host port for the relay. Set the app's custom relay to http://YOUR-UNRAID-IP:THIS-PORT (base URL only, no path)." Type="Port" Display="always" Required="true" Mask="false">9977</Config>
   <Config Name="Path: /state" Target="/state" Default="/mnt/user/appdata/owp-relay" Mode="rw" Description="Room state, so rooms survive a container restart or update." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/owp-relay</Config>
   <Config Name="OWP_STATE_DIR" Target="OWP_STATE_DIR" Default="/state" Mode="" Description="Container path for room state. Leave as /state." Type="Variable" Display="advanced-hide" Required="true" Mask="false">/state</Config>
-  <Config Name="OWP_TRUST_PROXY" Target="OWP_TRUST_PROXY" Default="false" Mode="" Description="Set to true only behind a reverse proxy, so per-IP limits see the real client IP from X-Forwarded-For." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="OWP_TRUST_PROXY" Target="OWP_TRUST_PROXY" Default="false" Mode="" Description="Set to true only behind a reverse proxy, so per-IP limits see the real client IP from X-Forwarded-For." Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="OWP_MAX_PARTICIPANTS" Target="OWP_MAX_PARTICIPANTS" Default="8" Mode="" Description="Participants per room, from 1 to 20." Type="Variable" Display="advanced" Required="false" Mask="false">8</Config>
 </Container>
