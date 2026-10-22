@@ -25,6 +25,7 @@ Go to https://tvlistings.zap2it.com and make an account, once it is made you can
   <DonateText/>
   <DonateLink/>
   <Requires/>
+  <Deprecated>true</Deprecated>
   <Config Name="Container Path 1" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Container Variable 1" Target="USERNAME" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Container Variable 2" Target="PASSWORD" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
