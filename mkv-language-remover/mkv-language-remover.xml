@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/BBergle/mkv-language-remover</Project>
-  <Overview>The purpose of this container is to go through your movies directory and convert all mp4 and m2ts file to mkv and then remove a specific language from those movies.&#xD;
+  <Overview>RETIRED: this template is no longer maintained.&#13;&#10;&#13;&#10;The purpose of this container is to go through your movies directory and convert all mp4 and m2ts file to mkv and then remove a specific language from those movies.&#xD;
 It will also remove commentaries if set to true&#xD;
 &#xD;
 Please run this on a subset of your data before your entire library&#xD;

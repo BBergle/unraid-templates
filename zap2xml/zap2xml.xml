@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/shuaiscott/zap2xml/</Support>
   <Project>https://github.com/jef/zap2xml</Project>
-  <Overview>Environment Variable-driven configuration of zap2xml&#xD;
+  <Overview>RETIRED: this template is no longer maintained.&#13;&#10;&#13;&#10;Environment Variable-driven configuration of zap2xml&#xD;
 &#xD;
 This is now using a new repo spencerlandis/zap2xml
 Go to https://tvlistings.zap2it.com and make an account, once it is made you can enter the credentials in the fields below&#xD;
