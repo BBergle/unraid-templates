@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MediaCache</Name>
+  <Repository>ghcr.io/bbergle/mediacache:latest</Repository>
+  <Registry>https://github.com/BBergle/MediaCache/pkgs/container/mediacache</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/BBergle/MediaCache/issues</Support>
+  <Project>https://github.com/BBergle/MediaCache</Project>
+  <Overview>MediaCache moves what you are about to watch onto your cache drive, so the array can stay spun down, and moves watched media back afterwards.&#13;&#10;&#13;&#10;Works with Plex, or Jellyfin (experimental):&#13;&#10;- Plex: OnDeck and Watchlist for you and other users.&#13;&#10;- Jellyfin: Continue Watching and Next Up as OnDeck, Favorites as Watchlist.&#13;&#10;Web UI on port 5757 with a setup wizard, scheduling, notifications and cache management.&#13;&#10;&#13;&#10;MOVER INTEGRATION (optional): if you use the CA Mover Tuning plugin, set its exclude file to the unraid_mover_exclusions.txt in this container's Config folder.&#13;&#10;&#13;&#10;Migrating from PlexCache-D: stop it and set Config to its existing appdata folder (e.g. /mnt/user/appdata/plexcache). Settings, tracking and mover exclusions carry over.&#13;&#10;&#13;&#10;A fork of PlexCache-D by StudioNirin (github.com/StudioNirin/PlexCache-D).</Overview>
+  <Category>MediaServer:Other Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5757]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/BBergle/unraid-templates/main/mediacache/mediacache.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/BBergle/unraid-templates/main/mediacache/mediacache.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Plex Media Server or Jellyfin (10.9+) reachable from this container.</Requires>
+  <Config Name="Port: Web UI" Target="5757" Default="5757" Mode="tcp" Description="Web UI port." Type="Port" Display="always" Required="true" Mask="false">5757</Config>
+  <Config Name="Path: Config" Target="/config" Default="/mnt/user/appdata/mediacache" Mode="rw" Description="Settings, logs, tracking data and the mover exclude list. Migrating from PlexCache-D? Point this at its existing appdata folder." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mediacache</Config>
+  <Config Name="Path: Cache" Target="/mnt/cache" Default="/mnt/cache" Mode="rw" Description="Your cache drive, where media gets cached." Type="Path" Display="always" Required="true" Mask="false">/mnt/cache</Config>
+  <Config Name="Path: Array" Target="/mnt/user0" Default="/mnt/user0" Mode="rw" Description="Direct array access (user0), for moving files back and for .plexcached backups." Type="Path" Display="always" Required="true" Mask="false">/mnt/user0</Config>
+  <Config Name="Path: User shares" Target="/mnt/user" Default="/mnt/user" Mode="rw" Description="User shares, for resolving your media server's library paths." Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID for file permissions (99 = nobody on Unraid)." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID for file permissions (100 = users on Unraid)." Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="TZ" Target="TZ" Default="America/New_York" Mode="" Description="Timezone for log timestamps and scheduling." Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="Path: Unraid notify script" Target="/usr/local/emhttp" Default="/usr/local/emhttp" Mode="ro" Description="Unraid's notify script, for native Unraid notifications. Optional." Type="Path" Display="advanced" Required="false" Mask="false">/usr/local/emhttp</Config>
+  <Config Name="Path: Unraid notifications" Target="/tmp/notifications" Default="/tmp/notifications" Mode="rw" Description="Unraid's notification queue, for native Unraid notifications. Optional." Type="Path" Display="advanced" Required="false" Mask="false">/tmp/notifications</Config>
+</Container>
