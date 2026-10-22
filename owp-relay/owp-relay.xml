@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>owp-relay</Name>
+  <Name>OpenWatchParty</Name>
   <Repository>ghcr.io/edde746/owp-relay:1</Repository>
   <Registry>https://github.com/edde746/openwatchparty/pkgs/container/owp-relay</Registry>
   <Network>bridge</Network>
