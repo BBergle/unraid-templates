@@ -33,6 +33,7 @@ This uses the offical Jellyfin container. This official container should help mo
   <Config Name="JELLYFIN_PublishedServerUrl" Target="JELLYFIN_PublishedServerUrl" Default="192.168.0.5" Mode="{3}" Description="Set the autodiscovery response domain or IP address." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="xmltv" Target="/xmltv" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/jellyfin" Mode="rw" Description="Jellyfin data storage location. *This can grow very large, 50gb+ is likely for a large collection.*" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jellyfin</Config>
+  <Config Name="Cache" Target="/cache" Default="/mnt/user/appdata/jellyfin/cache" Mode="rw" Description="Jellyfin cache storage location." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jellyfin/cache</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
